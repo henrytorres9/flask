@@ -14,4 +14,5 @@ COPY . .
 RUN pip install -r requirements.txt
 
 # Ejecuta tu aplicación Flask
-CMD ["python", "main.py"]
+CMD ["sh", "-c", "python main.py &" ]
+
